@@ -34,8 +34,8 @@ function BookShelf() {
         ) : (
           shelf.map((book) => (
             <div key={book.key} className="book-card">
-              <h3>{book.title}</h3>
-              <p>{book.author_name?.join(", ")}</p>
+              <h3 >Book Title : <span style={{fontWeight:400}}>{book.title}</span></h3>
+              <h3>Edition Count : <span style={{fontWeight:400}}>{book.edition_count}</span></h3>
               <button
                 onClick={() => removeFromShelf(book.key)}
                 className="b-card"
